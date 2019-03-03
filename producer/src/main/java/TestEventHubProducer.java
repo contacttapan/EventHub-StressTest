@@ -16,12 +16,12 @@ public class TestEventHubProducer {
 
         final String topic = args[0];
         final String payload = args[1];
-        final Integer num_od_thread = Integer.parseInt(args[2]);
+        final Integer num_of_thread = Integer.parseInt(args[2]);
 
-        final ExecutorService executorService = Executors.newFixedThreadPool(num_od_thread);
+        final ExecutorService executorService = Executors.newFixedThreadPool(num_of_thread);
 
         //Run NUM_THREADS TestDataReporters
-        for (int i = 0; i < num_od_thread; i++)
+        for (int i = 0; i < num_of_thread; i++)
             executorService.execute(new ProducerThread(producer, topic,payload));
     }
 

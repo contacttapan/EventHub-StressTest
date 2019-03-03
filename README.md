@@ -17,11 +17,11 @@ Build the jars with dependencies :
 
 Execute the jar :
 
-``java -classpath event-hubs-kafka-java-producer-1.0-SNAPSHOT-jar-with-dependencies.jar TestEventHubProducer <TOPIC_NAME> payload-<1/2/3/4>.json``
+``java -classpath event-hubs-kafka-java-producer-1.0-SNAPSHOT-jar-with-dependencies.jar TestEventHubProducer <TOPIC_NAME> payload-<1/2/3/4>.json <num_of_thread>``
 
 ### Consumer
 
 Execute the jar :
 
-``java -classpath event-hubs-kafka-java-consumer-1.0-SNAPSHOT-jar-with-dependencies.jar TestEventHubConsumer <TOPIC_NAME> ``
+``java -classpath event-hubs-kafka-java-consumer-1.0-SNAPSHOT-jar-with-dependencies.jar TestEventHubConsumer <TOPIC_NAME> <num_of_thread>``
 
