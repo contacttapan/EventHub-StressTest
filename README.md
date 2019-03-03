@@ -8,6 +8,8 @@ https://github.com/Azure/azure-event-hubs-for-kafka
 This code base only generates the loads based on the payloads and number of threads passed in teh runtime arguments including the topic name.
 
 # How to Run
+Please do update the config files for your eventhub settings in Azure.
+
 Build the jars with dependencies :
 ``mvn clean package``
 
